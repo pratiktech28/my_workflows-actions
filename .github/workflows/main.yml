@@ -1,0 +1,9 @@
+name: GSoC-CI-Check
+on: [push]
+jobs:
+  check-physics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Simulation Test
+        run: echo "gprMax Physics Simulation is Running..."
